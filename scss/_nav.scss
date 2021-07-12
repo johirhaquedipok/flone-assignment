@@ -1,0 +1,173 @@
+// nav bar
+.li-bar {
+    width: 1px;
+    background-color: #c5c4c4;
+    height: 1rem;
+}
+
+.navbar {
+    font-size: 0.9rem;
+    color: rgba(0,0,0, 0.55);
+    
+  
+
+    .topNavbar-right-icons i {
+        font-size: 1.2rem;
+    }
+    .nav-item {
+        cursor: pointer;
+    }
+
+}
+//   .first-menubar {
+//         margin-bottom: -0.8rem;
+//     }
+    // .second-menubar {
+    //     margin-top: -0.5rem ;
+    // }
+.logo {
+    a {
+        color: #313131 !important;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+}
+// first nav bar
+.custom-dropdown {
+    position: relative;
+    transition: all .3s ease 0s;
+
+    ul {
+        position: absolute;
+        z-index: 220;
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        width: 125px;
+        padding: 8px 12px 10px;
+        transition: all .5s ease 0s;
+        
+        transform-origin: center top 0;
+        text-align: left;
+        opacity: 0;
+        background: #fff none repeat scroll 0 0;
+        box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+        
+    }
+
+    &:hover ul {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+// secondery nav bar
+.secondary-custom-dropdown {
+    position: relative;
+    transition: all .3s ease 0s;
+
+     div.mega-menu{
+        position: absolute;
+        z-index: 999;
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        width: 43.75rem;
+        padding:2.5rem 2.5rem 1rem;
+        transition: all .5s ease 0s;
+        display: block;
+        transform-origin: center top 0;
+        text-align: left;
+        opacity: 0;
+        background: #fff none repeat scroll 0 0;
+        box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);   
+
+        ul.mega-menu-submenu {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+
+            li {
+                ul {
+                   
+                    .mega-menu-submenu-head {
+                        a {
+                            font-size: 1rem;
+                            margin-bottom: 0.8rem;
+                            color: black;
+
+                            &:hover {
+                                        padding-left: 12px;
+
+                                         &::before {
+                                        opacity:  0;
+                                        }
+                            }
+                        }
+                            
+                 }
+                    li {
+                        a {
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 26px;
+                            display: block;
+                            padding-top: 0;
+                            padding-left: 12px;
+                            text-align: left;
+                            text-transform: capitalize;
+                            transition: all .3s ease-in-out 0s;
+                            position: relative;
+
+                                 &::before {
+                                    position: absolute;
+                                    z-index: 999;
+                                    top: 8px;
+                                    left: 0;
+                                    width: 7px;
+                                    height: 7px;
+                                    content: "";
+                                    transition: all .3s ease-in-out 0s;
+                                    opacity: 0;
+                                    border-radius: 50%;
+                                    background: #a749ff none repeat scroll 0 0;
+                                     }
+
+                                      &:hover {
+                                        padding-left: 12px;
+                                        
+                                        &::before{
+                                            opacity: 1;
+                                        }
+                                     }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+         div.mega-menu{
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        }
+}
+
+// breadcrumb
+.breadcrumb-content {
+    span {
+        font-size: 1.1rem;
+        font-weight: 400;
+        a {
+            text-decoration: none;
+            color: #555;
+
+            &:hover {
+                color: #a749ff;
+            }
+        }
+    }
+}

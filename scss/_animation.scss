@@ -1,0 +1,79 @@
+// animation 
+.animated {
+    animation-name: moveInBottom-1 ;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+.animated2 {
+    animation-name: moveInBottom-2;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}
+.animated3 {
+    animation-name: moveInBottom-2;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-fill-mode: both;
+}
+
+
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom-1 {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom-2 {
+   0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100%  {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+// animation ends

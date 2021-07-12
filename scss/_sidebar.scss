@@ -1,0 +1,94 @@
+
+
+
+// sidebar widgets 
+
+.sidebar-widget {
+    margin-right: 3rem;
+    h4 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: left;
+    }
+// search
+    .pro-sidebar-search {
+        
+        .pro-sidebar-search-form {
+            position: relative;
+            input {
+                font-size: 0.875rem;
+                height: 2.6875rem;
+                padding: 0.125rem 3.4375rem 0.125rem 1.125rem;
+                color: #000;
+                border: 1px solid #e6e6e6;
+                background: transparent none repeat scroll 0 0;
+            }
+
+            button {
+                font-size: 1.25rem;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                padding: 0 0.9375rem;
+                cursor: pointer;
+                transition: all .3s ease 0s;
+                transform: translateY(-50%);
+                color: #000;
+                border: #a1a5aa;
+                border-left: 1px solid #a1a5aa;
+                border-image: none;
+                background: transparent none repeat scroll 0 0;
+            }
+        }
+    }
+
+    // checkboxex
+
+    .pro-sidebar-check {
+        .form-check {
+            input {
+                font-size: 1rem;
+                
+            }
+            label {
+                font-size: 1rem;
+                margin-left: 0.6rem;
+                margin-bottom: 0.9rem;
+            }
+        }
+    }
+
+    // tags
+    .pro-sidebar-tags {
+
+        
+         ul {
+             margin: 0;
+             padding: 0;
+             list-style: none;
+              li {
+               display: inline-block;
+               margin:0 1rem 1.5rem 0;
+                button {
+               display: inline-block;
+                border: none;
+                font-size: 0.9rem;
+                text-decoration: none;
+                text-align: center;
+                padding: 0.5rem  1rem;
+                color: #424242;
+                background: #f6f6f6;
+                border-radius: 2rem;
+
+                &:hover {
+                    color: $body-bg;
+                    background: $link-hover-color;
+                }
+            }
+           
+          }
+         }
+        
+    }
+
+}

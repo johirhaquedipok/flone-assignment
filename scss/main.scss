@@ -1,0 +1,105 @@
+
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+// BOOTSTRAP ICONs
+@import url("../node_modules/bootstrap-icons/font/bootstrap-icons.css");
+
+
+// Custom.scss
+// custom color
+$body-bg: #fcfcfc;
+$font-family-sans-serif: 'Poppins', sans-serif;
+$link-hover-color: #a749ff;
+$nav-link-hover-color:#a749ff; 
+//  Include all of Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Then add additional custom code here
+
+body {
+  font-size: 0.625%;
+  background-color: $body-bg;
+  max-width: 1920px;
+  min-height: 100vh;
+}
+
+
+@import 'variables';
+@import 'nav';
+@import 'animation';
+@import 'sidebar';
+@import 'products';
+@import 'shop-product';
+@import 'footer';
+
+.container {
+  max-width: 1200px;
+}
+
+
+// support starts
+
+.support {
+    margin-top: 10rem;
+
+    .support-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3.6rem 1rem 3rem;
+        // background: #fdfdfd;
+        border: 0.5rem solid #fff;
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes icon-animation {
+            0% {
+                transform: scaleX(1);
+            }
+            10%,20% {
+                transform: scale3d(.9, .9 ,.9) rotate(-3deg);
+            }
+            30%,50%, 70%,90% {
+                transform: scale3d(1.1, 1.1 , 1.1) rotate(3deg);
+            }
+            40%,60%,80% {
+                transform: scale3d(1.1, 1.1 , 1.1) rotate(-3deg);
+            }
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+    .shake-icon {
+        margin-bottom: 2.5rem;
+
+    }
+
+    h6 {
+        margin-top: 2rem;
+    }
+
+    &:hover .animated {
+            animation: icon-animation 0.5s ease-in-out 0s 1 normal none running;
+    }
+    
+}
+}
+
+
+// login register
+
+@import 'loginregister';
+
+// contact form
+
+@import 'contact';

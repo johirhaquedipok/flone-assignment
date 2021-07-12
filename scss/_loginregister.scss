@@ -1,0 +1,96 @@
+
+.login-register-wrapper {
+    margin-bottom: 5rem;
+}
+.login-register-tab-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+    .nav-item {
+        position: relative;
+
+      
+
+        &:first-child::before {
+                background-color: #454545;
+                bottom: .7rem;
+                content: "";
+                height: 1.125rem;
+                margin: 0 auto;
+                position: absolute;
+                right: 2px;
+                transition: all .4s ease 0s;
+                width: 1px;
+        }
+        .nav-link {
+            background: none;
+            padding: 0 1rem;
+            color: black;
+            border: none;
+            
+            h4 {
+                font-weight: 700;
+                // color: #a749ff;
+            }
+        }
+    }
+}
+.nav-tabs {
+    border: 0;
+}
+.tab-content {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+
+    .login-form-container {
+        background: transparent none repeat scroll 0 0;
+        box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+        padding: 5rem;
+        text-align: left;
+
+
+        .active{
+            color: #a749ff;
+        }
+
+        form  {
+           .form-control {
+                background-color: transparent;
+                border: 1px solid #ebebeb;
+                color: #333;
+                font-size: 0.9rem;
+                height: 3rem;
+                margin-bottom: 30px;
+                padding: 0 15px;
+            }
+
+            .button-box {
+                margin-bottom: 1rem;
+                .login-toggle-btn {
+                    display: flex;
+                    justify-content: space-between;
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                }
+               
+            }
+             .loginbutton {
+                    border: none;
+                    padding: 0.5rem 1.2rem;
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                    transition: all 0.3s ease 0s;
+
+                    &:hover {
+                        background: #a749ff;
+                        color: #fff;
+                    }
+                }
+        }
+    }
+}
